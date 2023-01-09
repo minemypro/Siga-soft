@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bbbbbb88;
+}
+
+#corpo {
+    background-color: #888888;
+}
+
+.logomanupal {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+#chapeumenu {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.dropdown-content a img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.testar {
+    background-color: #22123d;
+    height: 120px;
+    color: aliceblue;
+}
+
+.pada {
+    height: 500px;
+    text-align: center;
+}
+
+.quadros_gerir {
+    background-color: #544193;
+    color: aliceblue;
+    margin: 1px;
+    padding: 15px;
+}
+
+.quadros_gerir a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.icon1 {
+    width: 50px;
+}
+
+.menu {
+    background-color: #22123d;
+    color: aliceblue;
+}
+
+
+
+/*  Menu principal */
+.menuprincipal {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.menuprincipal li {
+    list-style: none;
+
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.menuprincipal li a {
+    text-decoration: none;
+    padding: 15px;
+    transition: all 1s;
+    color: rgb(0, 0, 0);
+
+}
+
+.menuprincipal li a:hover {
+
+    color: #5a5a5a;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.menuprincipal li a img {
+    width: 50px;
+    margin-right: 10px;
+
+}
+
+
+/* menuempresa_baixo*/
+
+
+.menuempresa_baixo li {
+    list-style: none;
+    text-align: right;
+}
+
+.menuempresa_baixo li a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 1s;
+}
+
+.menuempresa_baixo li a:hover {
+    color: #8a2e2e;
+    margin-right: 5px;
+}
+
+
+/* menu midia menumidia */
+
+.menumidia {
+    background-color: #22123d;
+    border-radius: 10px;
+}
+
+.menumidia li {
+    list-style: none;
+    display: inline;
+    margin: 5px;
+    text-align: center;
+}
+
+.menumidia li a {
+    color: #f7f7f7;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.menumidia li a:hover {
+    text-decoration: underline;
+    color: #f8b0b0;
+}
+
+.fixed-top {
+    background-color: #22123d;
+}

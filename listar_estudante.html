@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SIGA-Sistema de Gestão academica Manupal</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="css/normalize.css">  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+ <div class="container">
+    <h1>Listar Estudante</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            
+            <th scope="col">codigo</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Dt. Nasc</th>
+            <th scope="col">Genero</th>
+            <th scope="col">identificacao</th>
+            <th scope="col">contacto</th>
+            <th scope="col">contacto_alternativo</th>
+            <th scope="col">classe</th>
+            <th scope="col">turno</th>
+            <th scope="col">horario</th>
+            <th scope="col">ação</th>
+          </tr>
+        </thead>
+            
+                <?php
+                include 'conexao.php';
+                $sql = "SELECT * FROM `cadastroestudante`";
+                $busca = mysqli_query($conn,$sql);
+
+                while($array = mysqli_fetch_array($busca)){
+                    $codigo=$array['codigo'];
+                    $nome_completo=$array['nome_completo'];
+                    $data_nascimento=$array['data_nascimento'];
+                    $genero=$array['genero']; 
+                    $identificacao=$array['identificacao']; 
+                    $contacto=$array['contacto'];
+                    $contacto_alternativo=$array['contacto_alternativo'];
+                    $classe=$array['classe'];
+                    $turno=$array['turno'];
+                    $horario=$array['horario'];
+
+             ?>
+                <tr>
+                <td><?php echo  $codigo;  ?> </td>
+                <td><?php echo  $nome_completo;  ?> </td>
+                <td><?php echo  $data_nascimento;  ?> </td>
+                <td><?php echo  $genero;  ?> </td>
+                <td><?php echo  $identificacao;  ?> </td>
+                <td><?php echo  $contacto;  ?> </td>
+                <td><?php echo  $contacto_alternativo;  ?> </td>
+                <td><?php echo  $classe;  ?> </td>             
+                <td><?php echo  $turno;  ?> </td>
+                <td><?php echo  $horario;  ?> </td>
+                <td>  <a class="btn btn-primary btn-sm"  href="editar_estudante.php?codigo=<?php echo $codigo; ?>" role="button">Editar</a> </td>
+              
+                        <?php  } ?>
+            </tr>
+        </tbody>
+    </table>
+
+ </div>
+    
+
+
+<script src="js/jquery-3.6.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</html>
